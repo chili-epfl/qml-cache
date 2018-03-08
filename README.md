@@ -6,6 +6,10 @@ qml-cache is a persistent app-exclusive key-value store plugin. It is tested wit
   - Ubuntu 16.04
   - Android 5.0.2 (arm-v7) built with SDK API 23 and NDK r10e on Ubuntu 16.04 host
 
+See [samples/](samples/) for example uses.
+
+See [DOCUMENTATION.md](DOCUMENTATION.md) for the API.
+
 build
 -----
 
@@ -15,10 +19,12 @@ build
     $ make install
 ```
 
-This will install the QML plugin inside the Qt sysroot. **Be aware that this is not a sandboxed installation.** See `samples/` for example usage.
+This will install the QML plugin inside the Qt sysroot. **Be aware that this is not a sandboxed installation.**
 
-QML API
--------
+build documentation
+-------------------
 
->  - `void` **QMLCache.write(** `string` key, `string` value **)** : Caches the key value pair
->  - `string` **QMLCache.read(** `string` key **)** : Retrieves the value from the cache, empty string if pair doesn't exist
+```
+    $ doxygen
+    $ moxygen --output DOCUMENTATION.md xml
+```

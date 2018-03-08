@@ -28,6 +28,8 @@
 #include <QStandardPaths>
 #include <QFile>
 
+namespace QMLCachePlugin{
+
 QMLCache::QMLCache(QQuickItem* parent) : QQuickItem(parent){
     cacheDir = QStandardPaths::writableLocation(QStandardPaths::StandardLocation::CacheLocation);
     if(cacheDir.isEmpty())
@@ -72,4 +74,6 @@ QString QMLCache::read(const QString& key){
     QString value = QString::fromUtf8(cacheFile.readAll());
     cacheFile.close();
     return value;
+}
+
 }

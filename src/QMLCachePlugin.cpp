@@ -26,6 +26,11 @@
 
 #include "QMLCache.h"
 
+/**
+ * @brief Persistent app-exclusive key-value store plugin, accessible from QML
+ */
+namespace QMLCachePlugin{
+
 void QMLCachePlugin::registerTypes(const char* uri){
     qmlRegisterSingletonType<QMLCache>(uri, 1, 0, "QMLCache",
                                                [] (QQmlEngine* qmlEngine, QJSEngine* jsEngine)->QObject* {
@@ -33,4 +38,6 @@ void QMLCachePlugin::registerTypes(const char* uri){
                                                    Q_UNUSED(jsEngine)
                                                    return new QMLCache();
                                                });
+}
+
 }

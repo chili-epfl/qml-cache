@@ -28,6 +28,10 @@
 #include <QQmlExtensionPlugin>
 #include <qqml.h>
 
+namespace QMLCachePlugin{
+
+/** @cond DO_NOT_DOCUMENT */
+
 class QMLCachePlugin : public QQmlExtensionPlugin {
     /* *INDENT-OFF* */
     Q_OBJECT
@@ -37,5 +41,9 @@ class QMLCachePlugin : public QQmlExtensionPlugin {
 public:
     void registerTypes(const char* uri);
 };
+
+/** @endcond */
+
+}
 
 #endif /* QMLCACHEPLUGIN_H */

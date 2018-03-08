@@ -28,12 +28,20 @@
 #include <QQuickItem>
 #include <QString>
 
+namespace QMLCachePlugin{
+
+/**
+ * @brief Persistent key-value cache accesible from QML
+ * @singleton
+ */
 class QMLCache : public QQuickItem {
     /* *INDENT-OFF* */
     Q_OBJECT
     /* *INDENT-ON* */
 
 public:
+
+    /** @cond DO_NOT_DOCUMENT */
 
     /**
      * @brief Creates a new QMLCache with the given QML parent
@@ -46,6 +54,8 @@ public:
      * @brief Destroys this QMLCache
      */
     ~QMLCache();
+
+    /** @endcond */
 
 public slots:
 
@@ -70,5 +80,7 @@ private:
     QString cacheDir;   ///< Cache directory for this app
 
 };
+
+}
 
 #endif /* QMLCACHE_H */
