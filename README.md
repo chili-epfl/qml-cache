@@ -24,6 +24,13 @@ This will install the QML plugin inside the Qt sysroot. **Be aware that this is 
 build documentation
 -------------------
 
+Install dependencies:
+```
+    $ apt install doxygen doxyqml
+    $ git clone git@github.com:sourcey/moxygen.git && cd moxygen && npm install -g .
+```
+
+Then, generate the documentation:
 ```
     $ doxygen
     $ moxygen --output DOCUMENTATION.md xml
