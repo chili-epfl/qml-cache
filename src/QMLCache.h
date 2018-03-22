@@ -28,7 +28,7 @@
 #include <QQuickItem>
 #include <QString>
 
-namespace QMLCachePlugin{
+namespace QMLCacheNS{
 
 /**
  * @brief Persistent key-value cache accesible from QML

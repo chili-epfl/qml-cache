@@ -28,7 +28,7 @@
 #include <QQmlExtensionPlugin>
 #include <qqml.h>
 
-namespace QMLCachePlugin{
+namespace QMLCacheNS{
 
 /** @cond DO_NOT_DOCUMENT */
 

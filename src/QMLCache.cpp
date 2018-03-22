@@ -28,7 +28,7 @@
 #include <QStandardPaths>
 #include <QFile>
 
-namespace QMLCachePlugin{
+namespace QMLCacheNS{
 
 QMLCache::QMLCache(QQuickItem* parent) : QQuickItem(parent){
     cacheDir = QStandardPaths::writableLocation(QStandardPaths::StandardLocation::CacheLocation);
