@@ -2,9 +2,9 @@
 
  Members                        | Descriptions                                
 --------------------------------|---------------------------------------------
-`namespace `[`QMLCachePlugin`](#namespaceQMLCachePlugin) | Persistent app-exclusive key-value store plugin, accessible from QML.
+`namespace `[`QMLCacheNS`](#namespaceQMLCacheNS) | Persistent app-exclusive key-value store plugin, accessible from QML.
 
-# namespace `QMLCachePlugin` 
+# namespace `QMLCacheNS` 
 
 Persistent app-exclusive key-value store plugin, accessible from QML.
 
@@ -12,12 +12,12 @@ Persistent app-exclusive key-value store plugin, accessible from QML.
 
  Members                        | Descriptions                                
 --------------------------------|---------------------------------------------
-`class `[`QMLCachePlugin::QMLCache`](#classQMLCachePlugin_1_1QMLCache) | Persistent key-value cache accesible from QML.
+`class `[`QMLCacheNS::QMLCache`](#classQMLCacheNS_1_1QMLCache) | Persistent key-value cache accesible from QML.
 
-# class `QMLCachePlugin::QMLCache` 
+# class `QMLCacheNS::QMLCache` 
 
 ```
-class QMLCachePlugin::QMLCache
+class QMLCacheNS::QMLCache
   : public QQuickItem
 ```  
 
@@ -29,12 +29,12 @@ This class is **singleton**, you can call `ThisClass.anyFunction()` and use `Thi
 
  Members                        | Descriptions                                
 --------------------------------|---------------------------------------------
-`{slot} public void `[`write`](#classQMLCachePlugin_1_1QMLCache_1adb85026007b2fc0c4e1c680d0dc6448d)`(const QString & key,const QString & value)` | Writes a new key-value pair to the app's cache.
-`{slot} public QString `[`read`](#classQMLCachePlugin_1_1QMLCache_1af7d4e1d8062cb32f8fd8fe48099f78ca)`(const QString & key)` | Reads a key-value pair from the app's cache.
+`{slot} public void `[`write`](#classQMLCacheNS_1_1QMLCache_1a14669485b2c477b53066e6eaf0000e9f)`(const QString & key,const QString & value)` | Writes a new key-value pair to the app's cache.
+`{slot} public QString `[`read`](#classQMLCacheNS_1_1QMLCache_1a15e6cbe95352e494db053c2fade73740)`(const QString & key)` | Reads a key-value pair from the app's cache.
 
 ## Members
 
-#### `{slot} public void `[`write`](#classQMLCachePlugin_1_1QMLCache_1adb85026007b2fc0c4e1c680d0dc6448d)`(const QString & key,const QString & value)` 
+#### `{slot} public void `[`write`](#classQMLCacheNS_1_1QMLCache_1a14669485b2c477b53066e6eaf0000e9f)`(const QString & key,const QString & value)` 
 
 Writes a new key-value pair to the app's cache.
 
@@ -43,7 +43,7 @@ Writes a new key-value pair to the app's cache.
 
 * `value` Value
 
-#### `{slot} public QString `[`read`](#classQMLCachePlugin_1_1QMLCache_1af7d4e1d8062cb32f8fd8fe48099f78ca)`(const QString & key)` 
+#### `{slot} public QString `[`read`](#classQMLCacheNS_1_1QMLCache_1a15e6cbe95352e494db053c2fade73740)`(const QString & key)` 
 
 Reads a key-value pair from the app's cache.
 
