@@ -16,6 +16,12 @@
  */
 
 /**
+ * @mainpage qml-cache
+ *
+ * qml-cache is a persistent app-exclusive key-value store plugin. See README.md for more information.
+ */
+
+/**
  * @file QMLCachePlugin.h
  * @brief Object that exposes the QMLCache plugin components as QML objects
  * @author Ayberk Özgür

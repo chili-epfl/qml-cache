@@ -10,7 +10,7 @@ qml-cache is a persistent app-exclusive key-value store plugin. It is tested wit
 
 See [samples/](samples/) for example uses.
 
-See [DOCUMENTATION.md](DOCUMENTATION.md) for the API.
+See [doc/index.html](doc/index.html) for the API.
 
 build [Linux & macOS]
 ---------------------
@@ -56,12 +56,10 @@ build documentation
 
 Install dependencies:
 ```
-    $ apt install doxygen doxyqml
-    $ git clone git@github.com:sourcey/moxygen.git && cd moxygen && npm install -g .
+  $ apt install doxygen doxyqml
 ```
 
 Then, generate the documentation:
 ```
-    $ doxygen
-    $ moxygen --output DOCUMENTATION.md xml
+  $ doxygen
 ```
